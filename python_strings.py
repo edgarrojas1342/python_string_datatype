@@ -31,7 +31,7 @@ print(my_last_name[-2:])
 #TODO Combining Strings
 #   - Print the following items (one per line) (print using variables)
 #       -first name and last name combined
-print(my_first_name + ' ' + my_last_name) # concat
+print(my_first_name, my_last_name) # concat
 #       -first name six times
 print(my_first_name*6) 
 
@@ -40,18 +40,20 @@ print(my_first_name*6)
 #       - first name last name -was born in- year of birth
 print(my_first_name, my_last_name, 'was born in', my_year_of_birth)
 #       - first name last name -was born in- year of birth. first name -enjoyed celebrating- current year
-print(my_first_name + my_last_name + 'was born in' + my_year_of_birth + '.' + my_first_name + 'enjoyed celebrating' + 2023)
-
-
+print(my_first_name, my_last_name, 'was born in', str(my_year_of_birth) + '.', my_first_name, 'enjoyed celebrating', current_year)
 
 # TODO Escape characters
 #   - Print the following items (one per line) (print using variables)
-#       - possesive first name -birth year is- year of birth 
+#       - possesive first name -birth year is- year of birth
+print(my_first_name + '\'s' + " birth year is " + str(my_year_of_birth)) 
 #       - tab last name current year
-
+print("\t", my_last_name, current_year)
 
 # TODO String methods
 #   - Print the following items (one per line) (print using variables)
 #       - first name and last name in lower case
+print(my_first_name.casefold(), my_last_name.casefold()) #method
 #       - length of last name
+print(len(my_last_name)) #function
 #       - first name and last name all in upper case
+print(my_first_name.upper(), my_last_name.upper())
